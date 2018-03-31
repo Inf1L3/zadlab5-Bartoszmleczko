@@ -10,27 +10,27 @@ package pl.edu.ur.oopl5;
  * @author Bartosz
  */
 public class Ksiegarnia {
-    private String tytul="Wladca Pierscieni";
-    private String autor="Tolkien";
-    private int liczba_stron=1000;
-    public double cena=50.0;
-    Ksiegarnia (double cena)
-    {
-        this.cena=cena;
+
+    private String tytul = "Wladca Pierscieni";
+    private String autor = "Tolkien";
+    private int liczba_stron = 1000;
+    public double cena = 50.0;
+
+    Ksiegarnia(double cena) {
+        this.cena = cena;
     }
-        Ksiegarnia ()
-    {
+
+    Ksiegarnia() {
 
     }
-    public void pokazDane()
-    {
+
+    public void pokazDane() {
         System.out.println("tytul: " + tytul);
         System.out.println("autor: " + autor);
         System.out.println("Liczba stron: " + liczba_stron);
         System.out.println("cena: " + cena);
     }
-    
-    
+
     public String getTytul() {
         return tytul;
     }
@@ -42,8 +42,9 @@ public class Ksiegarnia {
     public int getLiczba_stron() {
         return liczba_stron;
     }
+
     public double getCena() {
         return cena;
     }
-    
+
 }
