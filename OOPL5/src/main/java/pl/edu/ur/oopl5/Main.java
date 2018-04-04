@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         // TODO zad 3, 5, 6
         Scanner sc = new Scanner(System.in);
@@ -16,26 +17,36 @@ public class Main {
          System.out.println(ksiazka.getAutor());
          System.out.println(ksiazka.getLiczba_stron());
          System.out.println(ksiazka.getCena());*/
-        System.out.println("Podaj rozmiar stosu: ");
-        int size = sc.nextInt();
-        int elem;
-        Stack stack1 = new Stack(size);
-        System.out.println("1.Dodaj do stosu 2.Usun ze stosu 3. Pokaz stos.");
-        int check = sc.nextInt();
-        switch (check) {
-            case 1:
-                stack1.push();
-                break;
-            case 2:
-                stack1.pop();
-                break;
-            case 3:
-                stack1.showStack();
-                break;
-            case 4: stack1.showSize();break;
-            default:
-                System.out.println("Zly numer");
-        }
-    }
 
+        /*
+         System.out.println("Podaj rozmiar stosu: ");
+         int size = sc.nextInt();
+         int looper = 1;
+         Stack stack1 = new Stack(size);
+         do {
+         System.out.println("1.Dodaj do stosu 2.Usun ze stosu 0. Wyjdz ze stosu.");
+         int check = sc.nextInt();
+         switch (check) {
+         case 0:
+         looper = 0;
+         break;
+         case 1:
+         stack1.push(sc.nextInt());
+         break;
+         case 2:
+         stack1.pop();
+         break;
+
+         default:
+         System.out.println("Zly numer");
+         }
+         } while (looper == 1);
+         */
+        /*  Firma concern = new Firma();
+        concern.setData(0);
+        concern.uploadAll();*/
+        
+        Liczba number = new Liczba(5);
+        
+    }
 }
