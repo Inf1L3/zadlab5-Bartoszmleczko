@@ -1,5 +1,6 @@
 package pl.edu.ur.oopl5;
 
+
 import java.util.Scanner;
 
 public class Main {
@@ -45,8 +46,10 @@ public class Main {
         /*  Firma concern = new Firma();
         concern.setData(0);
         concern.uploadAll();*/
-        
-        Liczba number = new Liczba(5);
-        
+        String num=sc.nextLine();
+        Liczba number = new Liczba(num);
+        number.convert();
+        System.out.println(number.multiplying(5));
+        System.out.println(number.factorial());
     }
 }
